@@ -1,0 +1,5 @@
+# Archivo de usuarios - Noetic Studios
+# Formato: email,contraseña,nombre,rol
+# rol: admin | usuario
+usuario@tienda.com,user123,Usuario Demo,usuario
+admin@tienda.com,admin123,Administrador,admin
