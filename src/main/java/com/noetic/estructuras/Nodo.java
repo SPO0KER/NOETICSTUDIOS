@@ -1,6 +1,5 @@
 package com.noetic.estructuras;
 
-   
 public class Nodo<T> {
     public T dato;
     public Nodo<T> siguiente;

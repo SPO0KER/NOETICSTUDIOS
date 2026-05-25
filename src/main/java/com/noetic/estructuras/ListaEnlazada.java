@@ -3,7 +3,6 @@ package com.noetic.estructuras;
 import java.util.ArrayList;
 import java.util.List;
 
-   
 public class ListaEnlazada<T> {
 
     private Nodo<T> cabeza;
@@ -14,7 +13,6 @@ public class ListaEnlazada<T> {
         tamaño = 0;
     }
 
-  
     public void agregar(T dato) {
         Nodo<T> nuevo = new Nodo<>(dato);
         if (cabeza == null) {
@@ -29,7 +27,6 @@ public class ListaEnlazada<T> {
         tamaño++;
     }
 
-      
     public boolean eliminar(T dato) {
         if (cabeza == null) return false;
         if (cabeza.dato.equals(dato)) {
@@ -49,7 +46,6 @@ public class ListaEnlazada<T> {
         return false;
     }
 
-    
     public T obtener(int indice) {
         if (indice < 0 || indice >= tamaño) throw new IndexOutOfBoundsException("Índice fuera de rango: " + indice);
         Nodo<T> actual = cabeza;
@@ -59,7 +55,6 @@ public class ListaEnlazada<T> {
         return actual.dato;
     }
 
-      
     public boolean contiene(T dato) {
         Nodo<T> actual = cabeza;
         while (actual != null) {
@@ -69,7 +64,6 @@ public class ListaEnlazada<T> {
         return false;
     }
 
-   
     public List<T> aLista() {
         List<T> resultado = new ArrayList<>();
         Nodo<T> actual = cabeza;
