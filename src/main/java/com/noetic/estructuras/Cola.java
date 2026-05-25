@@ -3,7 +3,6 @@ package com.noetic.estructuras;
 import java.util.ArrayList;
 import java.util.List;
 
-   
 public class Cola<T> {
 
     private Nodo<T> frente;
@@ -16,7 +15,6 @@ public class Cola<T> {
         tamaño = 0;
     }
 
-       
     public void encolar(T dato) {
         Nodo<T> nuevo = new Nodo<>(dato);
         if (estaVacia()) {
@@ -29,7 +27,6 @@ public class Cola<T> {
         tamaño++;
     }
 
-     
     public T desencolar() {
         if (estaVacia()) throw new RuntimeException("La cola está vacía");
         T dato = frente.dato;
@@ -39,13 +36,11 @@ public class Cola<T> {
         return dato;
     }
 
-     
     public T verFrente() {
         if (estaVacia()) throw new RuntimeException("La cola está vacía");
         return frente.dato;
     }
 
-   
     public List<T> aLista() {
         List<T> resultado = new ArrayList<>();
         Nodo<T> actual = frente;

@@ -3,7 +3,6 @@ package com.noetic.estructuras;
 import java.util.ArrayList;
 import java.util.List;
 
-   
 public class Pila<T> {
 
     private Nodo<T> tope;
@@ -21,7 +20,6 @@ public class Pila<T> {
         tamaño++;
     }
 
-     
     public T desapilar() {
         if (estaVacia()) throw new RuntimeException("La pila está vacía");
         T dato = tope.dato;
@@ -30,13 +28,11 @@ public class Pila<T> {
         return dato;
     }
 
-   
     public T verTope() {
         if (estaVacia()) throw new RuntimeException("La pila está vacía");
         return tope.dato;
     }
 
-    
     public boolean eliminar(T dato) {
         if (estaVacia()) return false;
         Pila<T> temporal = new Pila<>();
